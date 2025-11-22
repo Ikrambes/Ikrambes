@@ -7,11 +7,14 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+intelligent+webapps...;Creating+scalable+systems...;Exploring+AI+integration..." alt="Typing SVG"/>
   </p>
 
-  <p>
-    [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ikram-besbassi/)
-[![Email](https://img.shields.io/badge/Email-%23D44638.svg?logo=gmail&logoColor=white)](mailto:besbassi.ikram@gmail.com)
-
-  </p>
+  <p align="center">
+  <a href="https://www.linkedin.com/in/ikram-besbassi/">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:besbassi.ikram@gmail.com">
+    <img src="https://img.shields.io/badge/Email-%23D44638.svg?logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+</p>
 
 </div>
 
