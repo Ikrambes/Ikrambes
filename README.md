@@ -1,4 +1,44 @@
-# Hi there, I'm Ikram Besbassi<br><br>Final-Year Software Engineering Student | AI & Intelligent Applications  <br><br>---<br><br>**About Me**<br>I am a final-year Software Engineering student passionate about building **intelligent web applications**.  <br>I focus on designing **scalable, user-focused, and data-driven systems**, combining performance, usability, and practical innovation.  <br><br>---<br><br>**Skills**<br><br>**Programming & Development:**  <br>Python, Java, JavaScript, TypeScript, SQL, PHP, Kotlin, Swift, Dart (Flutter)  <br>HTML, CSS<br><br>**Databases:**  <br>MySQL, MongoDB, Firebase, NoSQL  <br><br>**Frameworks:**  <br>Flask, React, Angular, Node.js, Express, Flutter  <br><br><br>**AI & Machine Learning:**  <br>Data Analysis & Processing (Pandas, NumPy, PySpark), AI Model Training & Optimization  <br><br>---<br><br>**Contact**<br>- [LinkedIn](https://www.linkedin.com/in/ikram-besbassi/)  <br>- [GitHub](https://github.com/Ikrambes)  <br>- Email: besbassi.ikram@gmail.com  <br>
+<h1 align="center">
+  Hi there, I'm Ikram Besbassi 👋
+</h1>
+<h3 align="center">
+  Final-Year Software Engineering Student | AI & Intelligent Applications
+</h3>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&color=00bfff&center=true&vCenter=true&width=600&lines=Building+intelligent+web+applications...;Creating+scalable+systems...;Exploring+AI+integration..." alt="Typing SVG"/>
+</p>
+
+---
+
+### About Me
+I am a final-year Software Engineering student passionate about building **intelligent web applications**.  
+I focus on designing **scalable, user-focused, and data-driven systems**, combining performance, usability, and practical innovation.  
+
+---
+
+### Skills
+
+**Programming & Development:**  
+Python, Java, JavaScript, TypeScript, SQL, PHP, Kotlin, Swift, Dart (Flutter)  
+HTML, CSS  
+
+**Databases:**  
+MySQL, MongoDB, Firebase, NoSQL  
+
+**Frameworks:**  
+Flask, React, Angular, Node.js, Express, Flutter  
+
+**AI & Machine Learning:**  
+Data Analysis & Processing (Pandas, NumPy, PySpark), AI Model Training & Optimization  
+
+---
+
+### Contact
+- [LinkedIn](https://www.linkedin.com/in/ikram-besbassi/)  
+- [GitHub](https://github.com/Ikrambes)  
+- Email: besbassi.ikram@gmail.com
+
 
 
 ## 🌐 Socials:
