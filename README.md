@@ -8,8 +8,9 @@
   </p>
 
   <p>
-    <a href="https://www.linkedin.com/in/ikram-besbassi/" target="_blank" style="text-decoration: none; display: inline-block; background-color: #0077B5; color: white; font-weight: bold; padding: 12px 25px; border-radius: 8px; margin-right: 10px;">LinkedIn</a>
-    <a href="mailto:besbassi.ikram@gmail.com" style="text-decoration: none; display: inline-block; background-color: #D44638; color: white; font-weight: bold; padding: 12px 25px; border-radius: 8px;">Email Me</a>
+    [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ikram-besbassi/)
+[![Email](https://img.shields.io/badge/Email-%23D44638.svg?logo=gmail&logoColor=white)](mailto:besbassi.ikram@gmail.com)
+
   </p>
 
 </div>
