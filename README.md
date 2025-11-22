@@ -1,14 +1,18 @@
-<h1 align="center">
-  Hi there, I'm Ikram Besbassi 👋
-</h1>
-<h3 align="center">
-  Final-Year Software Engineering Student | AI & Intelligent Applications
-</h3>
+<div align="center" style="background: linear-gradient(135deg,#0b3d91,#1e5799); padding: 40px; border-radius: 15px;">
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+intelligent+web+applications...;Creating+scalable+systems...;Exploring+AI+integration..." style="background:linear-gradient(135deg,#0b3d91,#1e5799);padding:10px;border-radius:10px;" alt="Typing SVG"/>
-</p>
+  <h1 style="color: white; margin-bottom: 0;">Hi there, I'm Ikram Besbassi 👋</h1>
+  <h3 style="color: white; margin-top: 5px;">Final-Year Software Engineering Student | AI & Intelligent Applications</h3>
 
+  <p>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+intelligent+web+applications...;Creating+scalable+systems...;Exploring+AI+integration..." alt="Typing SVG"/>
+  </p>
+
+  <p>
+    <a href="https://www.linkedin.com/in/ikram-besbassi/" target="_blank" style="text-decoration: none; background-color: #0077B5; color: white; padding: 10px 20px; border-radius: 5px; margin-right: 10px;">LinkedIn</a>
+    <a href="mailto:besbassi.ikram@gmail.com" style="text-decoration: none; background-color: #D44638; color: white; padding: 10px 20px; border-radius: 5px;">Email Me</a>
+  </p>
+
+</div>
 ---
 
 ### About Me
@@ -33,10 +37,6 @@ Flask, React, Angular, Node.js, Express, Flutter
 Data Analysis & Processing (Pandas, NumPy, PySpark), AI Model Training & Optimization, Web Scraping & Automation (Selenium, BeautifulSoup)
 
 ---
-
-### Socials : 
-[LinkedIn](https://www.linkedin.com/in/ikram-besbassi/) • [GitHub](https://github.com/Ikrambes) • besbassi.ikram@gmail.com
-
 
 
 # 💻 Tech Stack:
