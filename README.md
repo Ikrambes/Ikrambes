@@ -4,7 +4,7 @@
   <h3 style="color: white; margin-top: 5px;">Final-Year Software Engineering Student | AI & Intelligent Applications</h3>
 
   <p>
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+intelligent+webapps...;Creating+scalable+systems...;Exploring+AI+integration..." alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+intelligent+web-apps...;Creating+scalable+systems...;Exploring+AI+integration..." alt="Typing SVG"/>
   </p>
 
   <p align="center">
