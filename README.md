@@ -31,7 +31,7 @@ Software Engineer with a Master's degree in Software Engineering. I build backen
 
 **Frontend**
 <br/>
-<img src="https://skillicons.dev/icons?i=react,nextjs,angular,html,css,tailwind,flutter&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=react,nextjs,angular,html,css,tailwind&theme=dark"/>
 
 **Data & AI**
 <br/>
@@ -47,16 +47,12 @@ Software Engineer with a Master's degree in Software Engineering. I build backen
 <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase&theme=dark"/>
 <a href="https://kafka.apache.org/" target="_blank"><img src="https://img.shields.io/badge/-Kafka-171310?style=flat-square&logo=apachekafka&logoColor=FFFFFF" height="26"/></a>
 
-**DevOps & Tools**
+**DevOps, Cloud & Tools**
 <br/>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,git,linux&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,git,linux,aws&theme=dark"/>
 <a href="https://www.selenium.dev/" target="_blank"><img src="https://img.shields.io/badge/-Selenium-171310?style=flat-square&logo=selenium&logoColor=43B02A" height="26"/></a>
 <a href="https://docs.celeryq.dev/" target="_blank"><img src="https://img.shields.io/badge/-Celery-171310?style=flat-square&logo=celery&logoColor=37814A" height="26"/></a>
 <sub>Docker Compose · CI/CD</sub>
-
-**Cloud**
-<br/>
-<img src="https://skillicons.dev/icons?i=aws&theme=dark"/>
 
 <br/>
 
@@ -72,9 +68,9 @@ Software Engineer with a Master's degree in Software Engineering. I build backen
 
 <br/>
 
-### 🐍 Snake
+### 🐍 Take a break.
 
-> Take a break. Try to beat the high score.
+> Think you can beat the high score?
 
 <div align="center">
 <img src="snake/preview.svg" width="100%" alt="Snake game preview"/>
