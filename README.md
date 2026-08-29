@@ -1,111 +1,93 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00131A&height=160&section=header&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,100:1A1512&height=160&section=header&animation=fadeIn" width="100%"/>
 
 <h1>IKRAM BESBASSI</h1>
 <h3>Software Engineer</h3>
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=20&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=560&lines=Backend+%26+APIs;Full-Stack+Applications;AI-Powered+Software;Data+%26+Automation;Cloud+%26+DevOps" alt="rotating focus areas" />
-
-<br/>
+<p>Building backend services, full-stack systems, data pipelines, and AI-enabled applications.</p>
 
 <a href="https://www.linkedin.com/in/ikrambes/">
-  <img src="https://img.shields.io/badge/-LinkedIn-161B22?style=flat-square&logo=linkedin&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/-LinkedIn-1A1512?style=flat-square&logo=linkedin&logoColor=EA580C" />
 </a>
 <a href="mailto:besbassi.ikram@gmail.com">
-  <img src="https://img.shields.io/badge/-Email-161B22?style=flat-square&logo=gmail&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/-Email-1A1512?style=flat-square&logo=gmail&logoColor=EA580C" />
 </a>
 <a href="https://github.com/Ikrambes">
-  <img src="https://img.shields.io/badge/-GitHub-161B22?style=flat-square&logo=github&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/-GitHub-1A1512?style=flat-square&logo=github&logoColor=EA580C" />
 </a>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:1F6FEB,100:0D1117&height=2&section=header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,50:EA580C,100:0D0D0D&height=2&section=header" width="100%"/>
 
 <br/>
 
-## `01` About
+## About
 
-I'm a Software Engineer with a Master's degree in Software Engineering, focused on building complete systems rather than isolated pieces — from the interface down to the data layer and the background processes that keep it running.
+I'm a Software Engineer with a Master's degree in Software Engineering, focused on building complete systems rather than isolated pieces: interfaces, the APIs beneath them, the databases they rely on, and the background processes that keep everything running.
 
-My work spans full-stack applications (Next.js, FastAPI, PostgreSQL), backend services and APIs in Python and Java, and data-driven features built with NLP and lightweight ML — most recently a platform for monitoring an ATM network and an automated SEO auditing tool. I'm equally comfortable writing synchronous request/response code and asynchronous, event-driven processing, and I containerize and ship what I build.
+Recent work includes a full-stack platform for monitoring an ATM network (Next.js, FastAPI, PostgreSQL, Redis, Celery) and an NLP-based tool that automated SEO keyword auditing. I move across application development, backend systems, data processing, automation, and AI integration, and I containerize and ship what I build.
 
-Currently exploring Software Engineering opportunities — backend, full-stack, or Python/Java-focused roles where that range is useful.
+Currently exploring Software Engineering opportunities: backend, full-stack, and Python/Java-focused roles.
 
 <br/>
 
-## `02` Tech Stack
+## Tech Stack
 
 <div align="center">
 
 **Languages**
-<br/>
-<img src="https://img.shields.io/badge/-Python-161B22?style=flat-square&logo=python&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Java-161B22?style=flat-square&logo=openjdk&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-JavaScript-161B22?style=flat-square&logo=javascript&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-TypeScript-161B22?style=flat-square&logo=typescript&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Dart-161B22?style=flat-square&logo=dart&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-SQL-161B22?style=flat-square" />
-<img src="https://img.shields.io/badge/-Bash-161B22?style=flat-square&logo=gnubash&logoColor=58A6FF" />
+
+<img src="https://skillicons.dev/icons?i=py,java,js,ts,dart,bash&theme=dark" />
+<br/><sub>+ SQL</sub>
 
 **Application Development**
-<br/>
-<img src="https://img.shields.io/badge/-FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Flask-161B22?style=flat-square&logo=flask&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Node.js-161B22?style=flat-square&logo=nodedotjs&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Express-161B22?style=flat-square&logo=express&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-React-161B22?style=flat-square&logo=react&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Next.js-161B22?style=flat-square&logo=nextdotjs&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Angular-161B22?style=flat-square&logo=angular&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Tailwind%20CSS-161B22?style=flat-square&logo=tailwindcss&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Flutter-161B22?style=flat-square&logo=flutter&logoColor=58A6FF" />
+
+<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,express,react,nextjs,angular,flutter&theme=dark" />
 
 **Data & AI**
-<br/>
-<img src="https://img.shields.io/badge/-Pandas-161B22?style=flat-square&logo=pandas&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-NumPy-161B22?style=flat-square&logo=numpy&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-PySpark-161B22?style=flat-square&logo=apachespark&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Kafka-161B22?style=flat-square&logo=apachekafka&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-spaCy-161B22?style=flat-square&logo=spacy&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-NLP%20%2F%20TF--IDF-161B22?style=flat-square" />
 
-**Databases**
-<br/>
-<img src="https://img.shields.io/badge/-PostgreSQL-161B22?style=flat-square&logo=postgresql&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-MySQL-161B22?style=flat-square&logo=mysql&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-MongoDB-161B22?style=flat-square&logo=mongodb&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Redis-161B22?style=flat-square&logo=redis&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Firebase-161B22?style=flat-square&logo=firebase&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-MinIO-161B22?style=flat-square&logo=minio&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/-Pandas-1A1512?style=flat-square&logo=pandas&logoColor=EA580C" />
+<img src="https://img.shields.io/badge/-NumPy-1A1512?style=flat-square&logo=numpy&logoColor=EA580C" />
+<img src="https://img.shields.io/badge/-PySpark-1A1512?style=flat-square&logo=apachespark&logoColor=EA580C" />
+<img src="https://img.shields.io/badge/-Kafka-1A1512?style=flat-square&logo=apachekafka&logoColor=EA580C" />
+<img src="https://img.shields.io/badge/-spaCy-1A1512?style=flat-square&logo=spacy&logoColor=EA580C" />
 
-**Cloud / DevOps / Tools**
-<br/>
-<img src="https://img.shields.io/badge/-Docker-161B22?style=flat-square&logo=docker&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Kubernetes-161B22?style=flat-square&logo=kubernetes&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Git-161B22?style=flat-square&logo=git&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-GitHub%20Actions-161B22?style=flat-square&logo=githubactions&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Linux-161B22?style=flat-square&logo=linux&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Celery-161B22?style=flat-square&logo=celery&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/-Selenium-161B22?style=flat-square&logo=selenium&logoColor=58A6FF" />
+**Databases & Storage**
+
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase&theme=dark" />
+<br/><sub>+ MinIO</sub>
+
+**Cloud / DevOps**
+
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,git,githubactions,linux&theme=dark" />
+<br/><sub>+ Selenium</sub>
 
 </div>
 
 <br/>
 
-## `03` Capabilities
+## Capabilities
 
-| Capability | What it covers |
-|---|---|
-| **Application Engineering** | Backend services, REST APIs, web applications, business logic, integrations |
-| **AI & Intelligent Applications** | Integrating AI/NLP/ML capabilities into software products and workflows |
-| **Data & Processing** | Data processing pipelines, distributed processing, streaming/event-driven systems |
-| **Data Systems** | Relational databases, NoSQL, caching layers, object storage |
-| **Automation & Infrastructure** | Containers, background job queues, CI/CD, deployment workflows |
+**Application Engineering**
+Backend services · REST APIs · web applications · business logic · integrations
+
+**AI & Intelligent Applications**
+NLP/ML capabilities integrated into practical software products
+
+**Data & Processing**
+Data pipelines · distributed processing · streaming and event-driven systems
+
+**Data Systems**
+Relational databases · NoSQL · caching · object storage
+
+**Automation & Infrastructure**
+Containers · background jobs · CI/CD · deployment workflows
 
 <br/>
 
-## `04` Console
+## Console
 
 ```
 $ whoami
@@ -114,76 +96,85 @@ Ikram Besbassi — Software Engineer
 $ core-stack
 Python · Java · TypeScript · FastAPI · React · PostgreSQL · Docker
 
-$ current-focus
+$ building
 backend services · APIs · data pipelines · AI integration · automation
 
-$ status
-open to Software Engineering opportunities
+$ looking-for
+Software Engineering opportunities
 ```
 
 <br/>
 
-## `05` Featured Projects
+## Featured Projects
 
-#### ATM Monitoring Platform
+### ATM Monitoring Platform
+
 Full-stack platform for monitoring, managing, and analyzing an ATM network.
 
 **Engineering focus:** full-stack architecture · REST APIs · asynchronous processing · background jobs · caching · relational databases · map-based visualization · containerization
 **Stack:** Next.js · TypeScript · FastAPI · PostgreSQL · Redis · Celery · SQLAlchemy · React-Leaflet · Docker
 
-→ [github.com/Ikrambes/ATM-Monitoring-Platform](https://github.com/Ikrambes/ATM-Monitoring-Platform)
+**[View repository →](https://github.com/Ikrambes/ATM-Monitoring-Platform)**
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,50:9A3412,100:0D0D0D&height=1&section=header" width="100%"/>
 
-#### SEO Keyword Auditor
-Python/Flask application for automated SEO keyword analysis that significantly reduced the time required to run a manual audit.
+### SEO Keyword Auditor
 
-**Engineering focus:** text processing pipeline · keyword relevance scoring (TF-IDF) · NLP-driven automation
+Python/Flask application for automated SEO keyword analysis.
+
+**Engineering focus:** text processing · keyword relevance scoring · TF-IDF · NLP-driven automation
 **Stack:** Python · Flask · spaCy · TF-IDF
 
-→ [github.com/Ikrambes/SEO-Insight](https://github.com/Ikrambes/SEO-Insight)
+<div align="center">
+<img src="https://raw.githubusercontent.com/Ikrambes/SEO-Insight/main/docs/screenshots/dashboard-keywords.png" width="720" alt="SEO Keyword Auditor — keyword opportunities dashboard"/>
+</div>
+
+**[View repository →](https://github.com/Ikrambes/SEO-Insight)**
+
+<br/>
+
+## Public Repositories
+
+**[ATM-Monitoring-Platform](https://github.com/Ikrambes/ATM-Monitoring-Platform)**
+Full-stack platform for monitoring and analyzing an ATM network.
+<sub>TypeScript</sub>
 
 ---
 
-#### Tarzaim
-Travel application focused on itinerary and travel management.
+**[SEO-Insight](https://github.com/Ikrambes/SEO-Insight)**
+AI-powered SEO analysis — keyword auditing, on-page checks, and competitor comparison.
+<sub>Python</sub>
 
-**Engineering focus:** application development · product feature design
+---
 
-*Repository not publicly available.*
-
-<br/>
-
-## `06` Public Repositories
-
-| Repository | Description | Language |
-|---|---|---|
-| [ATM-Monitoring-Platform](https://github.com/Ikrambes/ATM-Monitoring-Platform) | Full-stack platform for monitoring and analyzing an ATM network | TypeScript |
-| [SEO-Insight](https://github.com/Ikrambes/SEO-Insight) | AI-powered SEO analysis — keyword auditing, on-page checks, and competitor comparison | Python |
-| [PhishForge-PhishGard](https://github.com/Ikrambes/PhishForge-PhishGard) | Cybersecurity platform simulating phishing attacks and scoring URL threat risk | Python |
+**[PhishForge-PhishGard](https://github.com/Ikrambes/PhishForge-PhishGard)**
+Cybersecurity platform simulating phishing attacks and scoring URL threat risk.
+<sub>Python</sub>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:1F6FEB,100:0D1117&height=2&section=header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,50:EA580C,100:0D0D0D&height=2&section=header" width="100%"/>
 
 <div align="center">
 
 <br/>
 
-### Let's build something.
+### Let's build something useful.
+
+Software Engineering · Backend · Full-Stack · AI Integration · Data
 
 <a href="https://www.linkedin.com/in/ikrambes/">
-  <img src="https://img.shields.io/badge/-LinkedIn-161B22?style=flat-square&logo=linkedin&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/-LinkedIn-1A1512?style=flat-square&logo=linkedin&logoColor=EA580C" />
 </a>
 <a href="mailto:besbassi.ikram@gmail.com">
-  <img src="https://img.shields.io/badge/-Email-161B22?style=flat-square&logo=gmail&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/-Email-1A1512?style=flat-square&logo=gmail&logoColor=EA580C" />
 </a>
 <a href="https://github.com/Ikrambes">
-  <img src="https://img.shields.io/badge/-GitHub-161B22?style=flat-square&logo=github&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/-GitHub-1A1512?style=flat-square&logo=github&logoColor=EA580C" />
 </a>
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00131A&height=140&section=footer&animation=fadeIn&reversed=true" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,100:1A1512&height=140&section=footer&animation=fadeIn&reversed=true" width="100%"/>
 
 </div>
