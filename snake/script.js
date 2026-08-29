@@ -7,6 +7,25 @@
   var MIN_INTERVAL = 65;
   var INTERVAL_STEP = 4;
   var BEST_KEY = "snake_best_v1";
+  var SETTINGS_KEY = "snake_settings_v1";
+
+  var COLOR_PRESETS = {
+    green:  { head: "#4ade80", a: "#22c55e", b: "#14532d", glow: "rgba(34,197,94,0.65)" },
+    blue:   { head: "#60a5fa", a: "#3b82f6", b: "#1e3a8a", glow: "rgba(59,130,246,0.65)" },
+    purple: { head: "#c084fc", a: "#a855f7", b: "#581c87", glow: "rgba(168,85,247,0.65)" },
+    orange: { head: "#fb923c", a: "#ea580c", b: "#9a3412", glow: "rgba(234,88,12,0.65)" },
+    pink:   { head: "#f9a8d4", a: "#ec4899", b: "#831843", glow: "rgba(236,72,153,0.65)" },
+    cyan:   { head: "#67e8f9", a: "#06b6d4", b: "#164e63", glow: "rgba(6,182,212,0.65)" },
+    red:    { head: "#f87171", a: "#ef4444", b: "#7f1d1d", glow: "rgba(239,68,68,0.65)" },
+  };
+
+  var FRUITS = {
+    apple:      { glyph: "🍎", color: "#ef4444" },
+    strawberry: { glyph: "🍓", color: "#f43f5e" },
+    orange:     { glyph: "🍊", color: "#f97316" },
+    cherry:     { glyph: "🍒", color: "#dc2626" },
+    lemon:      { glyph: "🍋", color: "#eab308" },
+  };
 
   var canvas = document.getElementById("game");
   var ctx = canvas.getContext("2d");
@@ -54,6 +73,51 @@
 
   var best = loadBest();
   bestEl.textContent = pad(best);
+
+  function loadSettings() {
+    try {
+      var raw = localStorage.getItem(SETTINGS_KEY);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      if (parsed && COLOR_PRESETS[parsed.color] && FRUITS[parsed.fruit]) return parsed;
+    } catch (e) {}
+    return null;
+  }
+  function saveSettings() {
+    try {
+      localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    } catch (e) {}
+  }
+
+  var settings = loadSettings() || { color: "orange", fruit: "apple" };
+
+  var colorSwatches = document.querySelectorAll(".swatch");
+  var fruitButtons = document.querySelectorAll(".fruit-btn");
+
+  function applySettingsUI() {
+    colorSwatches.forEach(function (btn) {
+      btn.classList.toggle("selected", btn.getAttribute("data-color") === settings.color);
+    });
+    fruitButtons.forEach(function (btn) {
+      btn.classList.toggle("selected", btn.getAttribute("data-fruit") === settings.fruit);
+    });
+  }
+  applySettingsUI();
+
+  colorSwatches.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      settings.color = btn.getAttribute("data-color");
+      applySettingsUI();
+      saveSettings();
+    });
+  });
+  fruitButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      settings.fruit = btn.getAttribute("data-fruit");
+      applySettingsUI();
+      saveSettings();
+    });
+  });
 
   var state = "idle"; // idle | playing | over
   var paused = false;
@@ -106,7 +170,9 @@
         life: 1,
         decay: 0.02 + Math.random() * 0.02,
         r: 2 + Math.random() * 2,
-        hue: Math.random() < 0.5 ? "#fb923c" : "#ea580c",
+        hue: Math.random() < 0.5
+          ? (FRUITS[settings.fruit] || FRUITS.apple).color
+          : (COLOR_PRESETS[settings.color] || COLOR_PRESETS.orange).a,
       });
     }
   }
@@ -208,37 +274,35 @@
       ctx.stroke();
     }
 
-    // food
+    // food — rendered as the player's selected fruit
     var fc = cellCenter(food);
+    var fruit = FRUITS[settings.fruit] || FRUITS.apple;
     var pulse = 0.5 + Math.sin(Date.now() / 220) * 0.12;
-    var r = cell * 0.32 * (1 + pulse * 0.15);
-    var grad = ctx.createRadialGradient(fc.x, fc.y, 0, fc.x, fc.y, r * 2.2);
-    grad.addColorStop(0, "rgba(251,146,60,0.9)");
-    grad.addColorStop(1, "rgba(251,146,60,0)");
+    var r = cell * 0.34 * (1 + pulse * 0.15);
+    var grad = ctx.createRadialGradient(fc.x, fc.y, 0, fc.x, fc.y, r * 2.4);
+    grad.addColorStop(0, hexToRgba(fruit.color, 0.55));
+    grad.addColorStop(1, hexToRgba(fruit.color, 0));
     ctx.fillStyle = grad;
     ctx.beginPath();
-    ctx.arc(fc.x, fc.y, r * 2.2, 0, Math.PI * 2);
+    ctx.arc(fc.x, fc.y, r * 2.4, 0, Math.PI * 2);
     ctx.fill();
 
-    ctx.fillStyle = "#fb923c";
-    ctx.beginPath();
-    ctx.arc(fc.x, fc.y, r, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.fillStyle = "#fed7aa";
-    ctx.beginPath();
-    ctx.arc(fc.x - r * 0.3, fc.y - r * 0.3, r * 0.28, 0, Math.PI * 2);
-    ctx.fill();
+    ctx.font = Math.round(cell * 0.8) + 'px "Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif';
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(fruit.glyph, fc.x, fc.y + cell * 0.02);
 
-    // snake
+    // snake — rendered in the player's selected color
+    var preset = COLOR_PRESETS[settings.color] || COLOR_PRESETS.orange;
     var padCell = cell * 0.12;
     for (var i = snake.length - 1; i >= 0; i--) {
       var s = snake[i];
       var t = i / Math.max(1, snake.length - 1);
       var isHead = i === 0;
-      var color = isHead ? "#fb923c" : shade("#ea580c", "#9a3412", t);
+      var color = isHead ? preset.head : shade(preset.a, preset.b, t);
       ctx.fillStyle = color;
       if (isHead) {
-        ctx.shadowColor = "rgba(234,88,12,0.65)";
+        ctx.shadowColor = preset.glow;
         ctx.shadowBlur = 14 * dpr;
       } else {
         ctx.shadowBlur = 0;
@@ -294,6 +358,10 @@
   function hexToRgb(hex) {
     var v = parseInt(hex.slice(1), 16);
     return { r: (v >> 16) & 255, g: (v >> 8) & 255, b: v & 255 };
+  }
+  function hexToRgba(hex, a) {
+    var c = hexToRgb(hex);
+    return "rgba(" + c.r + "," + c.g + "," + c.b + "," + a + ")";
   }
 
   function loop(time) {

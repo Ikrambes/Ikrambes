@@ -70,7 +70,7 @@ Software Engineer with a Master's degree in Software Engineering. I build backen
 
 ### 🐍 Take a break.
 
-> Think you can beat the high score?
+> Customize your snake and fruit, then try to beat the high score.
 
 <div align="center">
 <img src="snake/preview.svg" width="100%" alt="Snake game preview"/>

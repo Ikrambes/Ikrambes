@@ -31,6 +31,32 @@
       <div class="overlay" id="start-overlay">
         <h1>SNAKE</h1>
         <p class="sub">arrow keys / WASD to move · space to start · P to pause</p>
+
+        <div class="customize">
+          <div class="custom-group">
+            <span class="custom-label">Snake color</span>
+            <div class="swatches" id="color-swatches">
+              <button class="swatch" data-color="green" style="--sw:#22c55e" aria-label="Green"></button>
+              <button class="swatch" data-color="blue" style="--sw:#3b82f6" aria-label="Blue"></button>
+              <button class="swatch" data-color="purple" style="--sw:#a855f7" aria-label="Purple"></button>
+              <button class="swatch selected" data-color="orange" style="--sw:#ea580c" aria-label="Orange"></button>
+              <button class="swatch" data-color="pink" style="--sw:#ec4899" aria-label="Pink"></button>
+              <button class="swatch" data-color="cyan" style="--sw:#06b6d4" aria-label="Cyan"></button>
+              <button class="swatch" data-color="red" style="--sw:#ef4444" aria-label="Red"></button>
+            </div>
+          </div>
+          <div class="custom-group">
+            <span class="custom-label">Fruit</span>
+            <div class="fruit-options" id="fruit-options">
+              <button class="fruit-btn selected" data-fruit="apple" aria-label="Apple">🍎</button>
+              <button class="fruit-btn" data-fruit="strawberry" aria-label="Strawberry">🍓</button>
+              <button class="fruit-btn" data-fruit="orange" aria-label="Orange">🍊</button>
+              <button class="fruit-btn" data-fruit="cherry" aria-label="Cherry">🍒</button>
+              <button class="fruit-btn" data-fruit="lemon" aria-label="Lemon">🍋</button>
+            </div>
+          </div>
+        </div>
+
         <button class="play" id="start-btn">Start Game</button>
       </div>
 
