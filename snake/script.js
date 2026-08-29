@@ -166,6 +166,9 @@
     if (head.x === food.x && head.y === food.y) {
       score += 10;
       scoreEl.textContent = pad(score);
+      scoreEl.classList.remove("bump");
+      void scoreEl.offsetWidth; // restart animation
+      scoreEl.classList.add("bump");
       spawnParticles(food);
       interval = Math.max(MIN_INTERVAL, BASE_INTERVAL - Math.floor(score / 10) * INTERVAL_STEP);
       food = randomEmptyCell();
