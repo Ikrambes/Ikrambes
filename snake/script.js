@@ -25,6 +25,7 @@
     orange:     { glyph: "🍊", color: "#f97316" },
     cherry:     { glyph: "🍒", color: "#dc2626" },
     lemon:      { glyph: "🍋", color: "#eab308" },
+    grapes:     { glyph: "🍇", color: "#7c3aed" },
   };
 
   var canvas = document.getElementById("game");
@@ -79,7 +80,9 @@
       var raw = localStorage.getItem(SETTINGS_KEY);
       if (!raw) return null;
       var parsed = JSON.parse(raw);
-      if (parsed && COLOR_PRESETS[parsed.color] && FRUITS[parsed.fruit]) return parsed;
+      if (!parsed || !FRUITS[parsed.fruit]) return null;
+      if (parsed.color === "custom" && typeof parsed.customHex === "string") return parsed;
+      if (COLOR_PRESETS[parsed.color]) return parsed;
     } catch (e) {}
     return null;
   }
@@ -89,15 +92,41 @@
     } catch (e) {}
   }
 
-  var settings = loadSettings() || { color: "orange", fruit: "apple" };
+  var settings = loadSettings() || { color: "orange", fruit: "apple", customHex: null };
+
+  function mixToward(hex, target, amt) {
+    var c = hexToRgb(hex);
+    var r = Math.round(c.r + (target - c.r) * amt);
+    var g = Math.round(c.g + (target - c.g) * amt);
+    var b = Math.round(c.b + (target - c.b) * amt);
+    return "rgb(" + r + "," + g + "," + b + ")";
+  }
+
+  function getPreset() {
+    if (settings.color === "custom" && settings.customHex) {
+      var hex = settings.customHex;
+      return {
+        head: mixToward(hex, 255, 0.35),
+        a: hex,
+        b: mixToward(hex, 0, 0.55),
+        glow: hexToRgba(hex, 0.65),
+      };
+    }
+    return COLOR_PRESETS[settings.color] || COLOR_PRESETS.orange;
+  }
 
   var colorSwatches = document.querySelectorAll(".swatch");
   var fruitButtons = document.querySelectorAll(".fruit-btn");
+  var customColorInput = document.getElementById("custom-color-input");
 
   function applySettingsUI() {
     colorSwatches.forEach(function (btn) {
       btn.classList.toggle("selected", btn.getAttribute("data-color") === settings.color);
     });
+    if (customColorInput) {
+      customColorInput.classList.toggle("selected", settings.color === "custom");
+      if (settings.customHex) customColorInput.value = settings.customHex;
+    }
     fruitButtons.forEach(function (btn) {
       btn.classList.toggle("selected", btn.getAttribute("data-fruit") === settings.fruit);
     });
@@ -111,6 +140,14 @@
       saveSettings();
     });
   });
+  if (customColorInput) {
+    customColorInput.addEventListener("input", function () {
+      settings.color = "custom";
+      settings.customHex = customColorInput.value;
+      applySettingsUI();
+      saveSettings();
+    });
+  }
   fruitButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       settings.fruit = btn.getAttribute("data-fruit");
@@ -172,7 +209,7 @@
         r: 2 + Math.random() * 2,
         hue: Math.random() < 0.5
           ? (FRUITS[settings.fruit] || FRUITS.apple).color
-          : (COLOR_PRESETS[settings.color] || COLOR_PRESETS.orange).a,
+          : getPreset().a,
       });
     }
   }
@@ -292,8 +329,8 @@
     ctx.textBaseline = "middle";
     ctx.fillText(fruit.glyph, fc.x, fc.y + cell * 0.02);
 
-    // snake — rendered in the player's selected color
-    var preset = COLOR_PRESETS[settings.color] || COLOR_PRESETS.orange;
+    // snake — rendered in the player's selected color (preset or custom picker)
+    var preset = getPreset();
     var padCell = cell * 0.12;
     for (var i = snake.length - 1; i >= 0; i--) {
       var s = snake[i];

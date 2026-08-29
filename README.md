@@ -5,7 +5,7 @@
 # Ikram Besbassi
 **Software Engineer**
 
-*Software engineering · Data · AI · Full-stack*
+*Backend · Full-stack · Data · AI*
 
 <a href="https://www.linkedin.com/in/ikrambes/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/-LinkedIn-171310?style=flat-square&logo=linkedin&logoColor=EA580C" height="26"/></a>
 <a href="mailto:besbassi.ikram@gmail.com"><img src="https://img.shields.io/badge/-Email-171310?style=flat-square&logo=gmail&logoColor=EA580C" height="26"/></a>
@@ -23,36 +23,38 @@ Software Engineer with a Master's degree in Software Engineering. I build backen
 
 **Languages**
 <br/>
-<img src="https://skillicons.dev/icons?i=py,java,js,ts,dart,bash&theme=dark"/> <sub>SQL</sub>
+<img src="https://skillicons.dev/icons?i=py,java,js,ts,dart,bash&theme=dark" height="48"/>
+<img src="https://img.shields.io/badge/-SQL-171310?style=flat-square" height="40"/>
 
 **Backend & APIs**
 <br/>
-<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,express&theme=dark"/> <sub>SQLAlchemy</sub>
+<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,express&theme=dark" height="48"/>
+<a href="https://www.sqlalchemy.org/" target="_blank"><img src="https://img.shields.io/badge/-SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white" height="40"/></a>
 
 **Frontend**
 <br/>
-<img src="https://skillicons.dev/icons?i=react,nextjs,angular,html,css,tailwind&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=react,nextjs,angular,html,css,tailwind,flutter&theme=dark" height="48"/>
 
 **Data & AI**
 <br/>
-<a href="https://pandas.pydata.org/" target="_blank"><img src="https://img.shields.io/badge/-Pandas-171310?style=flat-square&logo=pandas&logoColor=8C4FFF" height="26"/></a>
-<a href="https://numpy.org/" target="_blank"><img src="https://img.shields.io/badge/-NumPy-171310?style=flat-square&logo=numpy&logoColor=4DABCF" height="26"/></a>
-<a href="https://spark.apache.org/docs/latest/api/python/" target="_blank"><img src="https://img.shields.io/badge/-PySpark-171310?style=flat-square&logo=apachespark&logoColor=E25A1C" height="26"/></a>
-<a href="https://scikit-learn.org/" target="_blank"><img src="https://img.shields.io/badge/-scikit--learn-171310?style=flat-square&logo=scikitlearn&logoColor=F7931E" height="26"/></a>
-<a href="https://spacy.io/" target="_blank"><img src="https://img.shields.io/badge/-spaCy-171310?style=flat-square&logo=spacy&logoColor=09A3D5" height="26"/></a>
-<sub>NLP</sub>
+<a href="https://pandas.pydata.org/" target="_blank"><img src="https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="40"/></a>
+<a href="https://numpy.org/" target="_blank"><img src="https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="40"/></a>
+<a href="https://spark.apache.org/docs/latest/api/python/" target="_blank"><img src="https://img.shields.io/badge/-PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" height="40"/></a>
+<a href="https://scikit-learn.org/" target="_blank"><img src="https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" height="40"/></a>
+<a href="https://spacy.io/" target="_blank"><img src="https://img.shields.io/badge/-spaCy-09A3D5?style=flat-square&logo=spacy&logoColor=white" height="40"/></a>
 
 **Databases & Messaging**
 <br/>
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase&theme=dark"/>
-<a href="https://kafka.apache.org/" target="_blank"><img src="https://img.shields.io/badge/-Kafka-171310?style=flat-square&logo=apachekafka&logoColor=FFFFFF" height="26"/></a>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase&theme=dark" height="48"/>
+<a href="https://kafka.apache.org/" target="_blank"><img src="https://img.shields.io/badge/-Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" height="40"/></a>
 
 **DevOps, Cloud & Tools**
 <br/>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,git,linux,aws&theme=dark"/>
-<a href="https://www.selenium.dev/" target="_blank"><img src="https://img.shields.io/badge/-Selenium-171310?style=flat-square&logo=selenium&logoColor=43B02A" height="26"/></a>
-<a href="https://docs.celeryq.dev/" target="_blank"><img src="https://img.shields.io/badge/-Celery-171310?style=flat-square&logo=celery&logoColor=37814A" height="26"/></a>
-<sub>Docker Compose · CI/CD</sub>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,git,linux,aws&theme=dark" height="48"/>
+<a href="https://www.selenium.dev/" target="_blank"><img src="https://img.shields.io/badge/-Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" height="40"/></a>
+<a href="https://docs.celeryq.dev/" target="_blank"><img src="https://img.shields.io/badge/-Celery-37814A?style=flat-square&logo=celery&logoColor=white" height="40"/></a>
+
+<sub><em>Also using: Docker Compose · CI/CD</em></sub>
 
 <br/>
 
@@ -68,9 +70,9 @@ Software Engineer with a Master's degree in Software Engineering. I build backen
 
 <br/>
 
-### 🐍 Take a break.
+### 🐍 Take a break
 
-> Customize your snake and fruit, then try to beat the high score.
+> Customize your snake and fruit, then see if you can beat the high score.
 
 <div align="center">
 <img src="snake/preview.svg" width="100%" alt="Snake game preview"/>
