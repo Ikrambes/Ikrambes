@@ -1,0 +1,243 @@
+:root {
+  --bg: #0b0a09;
+  --panel: #171310;
+  --panel-2: #1f1710;
+  --border: #332619;
+  --accent: #ea580c;
+  --accent-light: #fb923c;
+  --accent-dark: #9a3412;
+  --danger: #b3441f;
+  --text: #f2ece4;
+  --text-dim: #a8998a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px 40px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(234, 88, 12, 0.08), transparent 60%),
+    var(--bg);
+}
+
+.wrap {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+}
+
+.brand a {
+  color: var(--text-dim);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand a:hover {
+  color: var(--accent-light);
+  border-color: var(--accent-dark);
+}
+
+.hud {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.hud .label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.hud .value {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent-light);
+  letter-spacing: 0.04em;
+}
+
+.hud .stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hud .stat.best .value {
+  color: var(--text);
+}
+
+.stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px -30px rgba(0, 0, 0, 0.8);
+}
+
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  background: rgba(11, 10, 9, 0.86);
+  backdrop-filter: blur(2px);
+  padding: 24px;
+  transition: opacity 0.2s ease;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.18em;
+  color: var(--text);
+}
+
+.overlay h1.halt {
+  color: var(--danger);
+}
+
+.overlay .sub {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+.overlay .score-line {
+  font-size: 14px;
+  color: var(--accent-light);
+  letter-spacing: 0.08em;
+}
+
+.overlay .new-best {
+  font-size: 11px;
+  color: var(--accent-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  height: 14px;
+}
+
+.overlay .new-best.show {
+  opacity: 1;
+}
+
+button.play {
+  appearance: none;
+  border: 1px solid var(--accent-dark);
+  background: linear-gradient(180deg, var(--accent), #c2410c);
+  color: #100b07;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px -8px rgba(234, 88, 12, 0.6);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+button.play:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px -8px rgba(234, 88, 12, 0.8);
+}
+
+button.play:active {
+  transform: translateY(0);
+}
+
+.controls-hint {
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.dpad {
+  display: grid;
+  grid-template-columns: repeat(3, 44px);
+  grid-template-rows: repeat(2, 44px);
+  gap: 6px;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.dpad button {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--text-dim);
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dpad button:active {
+  background: var(--accent-dark);
+  color: var(--text);
+}
+
+.dpad .up { grid-column: 2; grid-row: 1; }
+.dpad .left { grid-column: 1; grid-row: 2; }
+.dpad .down { grid-column: 2; grid-row: 2; }
+.dpad .right { grid-column: 3; grid-row: 2; }
+
+@media (min-width: 560px) {
+  .dpad { display: none; }
+}

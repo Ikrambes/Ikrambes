@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<title>Snake — Ikram Besbassi</title>
+<meta name="description" content="A small Snake game, built by Ikram Besbassi."/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <span>IKRAM BESBASSI · SNAKE</span>
+      <a href="https://github.com/Ikrambes" target="_blank" rel="noopener noreferrer">← profile</a>
+    </div>
+
+    <div class="hud">
+      <div class="stat">
+        <span class="label">Score</span>
+        <span class="value" id="score">0000</span>
+      </div>
+      <div class="stat best">
+        <span class="label">Best</span>
+        <span class="value" id="best">0000</span>
+      </div>
+    </div>
+
+    <div class="stage">
+      <canvas id="game" width="440" height="440"></canvas>
+
+      <div class="overlay" id="start-overlay">
+        <h1>SNAKE</h1>
+        <p class="sub">arrow keys / WASD to move · space to start</p>
+        <button class="play" id="start-btn">Start Game</button>
+      </div>
+
+      <div class="overlay hidden" id="over-overlay">
+        <h1 class="halt">SYSTEM HALTED</h1>
+        <p class="score-line" id="final-score">Score: 0000</p>
+        <p class="new-best" id="new-best">New Best</p>
+        <button class="play" id="retry-btn">Try Again</button>
+      </div>
+    </div>
+
+    <p class="controls-hint">swipe or use the pad below on touch devices</p>
+
+    <div class="dpad">
+      <button class="up" data-dir="up" aria-label="up">▲</button>
+      <button class="left" data-dir="left" aria-label="left">◀</button>
+      <button class="down" data-dir="down" aria-label="down">▼</button>
+      <button class="right" data-dir="right" aria-label="right">▶</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
