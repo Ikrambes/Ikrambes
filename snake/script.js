@@ -28,6 +28,84 @@
     grapes:     { glyph: "🍇", color: "#7c3aed" },
   };
 
+  // Background themes. Coordinates are fractions (0..1) of the canvas size so
+  // decorations scale correctly on resize without needing regeneration, and
+  // none of this touches Math.random() — food/particle randomness is untouched.
+  var THEMES = {
+    lava: {
+      label: "Lava", icon: "🌋",
+      grad: ["#1a0f08", "#2b120a"],
+      grid: "rgba(255,120,40,0.05)",
+      blobs: [
+        { fx: 0.12, fy: 0.88, fr: 0.24, color: "rgba(234,88,12,0.18)" },
+        { fx: 0.85, fy: 0.15, fr: 0.20, color: "rgba(239,68,68,0.14)" },
+        { fx: 0.55, fy: 0.98, fr: 0.30, color: "rgba(154,52,18,0.18)" },
+      ],
+      cracks: [
+        { x1: 0.05, y1: 0.95, x2: 0.30, y2: 0.75 },
+        { x1: 0.70, y1: 0.90, x2: 0.95, y2: 0.65 },
+        { x1: 0.40, y1: 0.05, x2: 0.55, y2: 0.22 },
+      ],
+    },
+    ice: {
+      label: "Ice", icon: "🏔️",
+      grad: ["#04101c", "#0d2438"],
+      grid: "rgba(180,230,255,0.06)",
+      blobs: [
+        { fx: 0.85, fy: 0.10, fr: 0.22, color: "rgba(255,255,255,0.10)" },
+        { fx: 0.10, fy: 0.20, fr: 0.18, color: "rgba(125,211,252,0.12)" },
+      ],
+      mountains: [
+        { color: "rgba(147,197,253,0.16)", points: [[0, 1], [0.18, 0.72], [0.34, 0.92], [0.5, 0.68], [0.5, 1]] },
+        { color: "rgba(255,255,255,0.10)", points: [[0.42, 1], [0.62, 0.78], [0.8, 0.94], [1, 0.7], [1, 1]] },
+      ],
+      sparkles: [
+        { fx: 0.15, fy: 0.35, fr: 0.006, phase: 0.2 }, { fx: 0.3, fy: 0.15, fr: 0.005, phase: 1.1 },
+        { fx: 0.55, fy: 0.28, fr: 0.006, phase: 2.0 }, { fx: 0.75, fy: 0.4, fr: 0.005, phase: 0.6 },
+        { fx: 0.9, fy: 0.22, fr: 0.006, phase: 1.7 }, { fx: 0.65, fy: 0.55, fr: 0.005, phase: 2.6 },
+      ],
+    },
+    earth: {
+      label: "Earth", icon: "🌍",
+      grad: ["#081209", "#122016"],
+      grid: "rgba(160,255,140,0.05)",
+      blobs: [
+        { fx: 0.15, fy: 0.15, fr: 0.22, color: "rgba(34,197,94,0.14)" },
+        { fx: 0.88, fy: 0.85, fr: 0.26, color: "rgba(101,67,33,0.16)" },
+        { fx: 0.15, fy: 0.9, fr: 0.2, color: "rgba(74,222,128,0.10)" },
+      ],
+    },
+    space: {
+      label: "Space", icon: "🌌",
+      grad: ["#04040c", "#0a0a1f"],
+      grid: "rgba(180,180,255,0.05)",
+      blobs: [
+        { fx: 0.78, fy: 0.22, fr: 0.34, color: "rgba(99,102,241,0.12)" },
+        { fx: 0.18, fy: 0.82, fr: 0.28, color: "rgba(168,85,247,0.10)" },
+      ],
+      stars: [
+        { fx: 0.08, fy: 0.12, fr: 0.006, phase: 0.1 }, { fx: 0.2, fy: 0.3, fr: 0.005, phase: 1.4 },
+        { fx: 0.35, fy: 0.08, fr: 0.006, phase: 2.2 }, { fx: 0.48, fy: 0.4, fr: 0.005, phase: 0.8 },
+        { fx: 0.6, fy: 0.15, fr: 0.006, phase: 1.9 }, { fx: 0.72, fy: 0.35, fr: 0.005, phase: 0.3 },
+        { fx: 0.85, fy: 0.08, fr: 0.006, phase: 2.6 }, { fx: 0.92, fy: 0.5, fr: 0.005, phase: 1.1 },
+        { fx: 0.15, fy: 0.55, fr: 0.005, phase: 2.9 }, { fx: 0.3, fy: 0.65, fr: 0.006, phase: 0.5 },
+        { fx: 0.55, fy: 0.6, fr: 0.005, phase: 1.6 }, { fx: 0.68, fy: 0.7, fr: 0.006, phase: 2.4 },
+        { fx: 0.82, fy: 0.62, fr: 0.005, phase: 0.9 }, { fx: 0.95, fy: 0.8, fr: 0.006, phase: 1.3 },
+        { fx: 0.4, fy: 0.85, fr: 0.005, phase: 2.7 }, { fx: 0.1, fy: 0.9, fr: 0.006, phase: 0.4 },
+      ],
+    },
+    candy: {
+      label: "Candy", icon: "🍬",
+      grad: ["#170a13", "#2a1220"],
+      grid: "rgba(255,180,220,0.06)",
+      blobs: [
+        { fx: 0.15, fy: 0.2, fr: 0.22, color: "rgba(244,114,182,0.16)" },
+        { fx: 0.85, fy: 0.78, fr: 0.22, color: "rgba(196,181,253,0.14)" },
+      ],
+      lollipop: { fx: 0.85, fy: 0.18, fr: 0.09 },
+    },
+  };
+
   var canvas = document.getElementById("game");
   var ctx = canvas.getContext("2d");
   var scoreEl = document.getElementById("score");
@@ -75,12 +153,16 @@
   var best = loadBest();
   bestEl.textContent = pad(best);
 
+  var DEFAULT_SETTINGS = { color: "orange", fruit: "apple", theme: "lava", customHex: null };
+
   function loadSettings() {
     try {
       var raw = localStorage.getItem(SETTINGS_KEY);
       if (!raw) return null;
       var parsed = JSON.parse(raw);
       if (!parsed || !FRUITS[parsed.fruit]) return null;
+      // theme is a newer field — default it rather than discarding older saved settings
+      if (!THEMES[parsed.theme]) parsed.theme = "lava";
       if (parsed.color === "custom" && typeof parsed.customHex === "string") return parsed;
       if (COLOR_PRESETS[parsed.color]) return parsed;
     } catch (e) {}
@@ -92,7 +174,12 @@
     } catch (e) {}
   }
 
-  var settings = loadSettings() || { color: "orange", fruit: "apple", customHex: null };
+  var settings = loadSettings() || {
+    color: DEFAULT_SETTINGS.color,
+    fruit: DEFAULT_SETTINGS.fruit,
+    theme: DEFAULT_SETTINGS.theme,
+    customHex: DEFAULT_SETTINGS.customHex,
+  };
 
   function mixToward(hex, target, amt) {
     var c = hexToRgb(hex);
@@ -117,7 +204,14 @@
 
   var colorSwatches = document.querySelectorAll(".swatch");
   var fruitButtons = document.querySelectorAll(".fruit-btn");
+  var themeButtons = document.querySelectorAll(".theme-btn");
   var customColorInput = document.getElementById("custom-color-input");
+  var resetBtn = document.getElementById("reset-defaults");
+  var pauseBtn = document.getElementById("pause-btn");
+
+  function applyTheme() {
+    document.documentElement.setAttribute("data-theme", THEMES[settings.theme] ? settings.theme : "lava");
+  }
 
   function applySettingsUI() {
     colorSwatches.forEach(function (btn) {
@@ -130,6 +224,10 @@
     fruitButtons.forEach(function (btn) {
       btn.classList.toggle("selected", btn.getAttribute("data-fruit") === settings.fruit);
     });
+    themeButtons.forEach(function (btn) {
+      btn.classList.toggle("selected", btn.getAttribute("data-theme") === settings.theme);
+    });
+    applyTheme();
   }
   applySettingsUI();
 
@@ -155,10 +253,36 @@
       saveSettings();
     });
   });
+  themeButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      settings.theme = btn.getAttribute("data-theme");
+      applySettingsUI();
+      saveSettings();
+    });
+  });
+  if (resetBtn) {
+    resetBtn.addEventListener("click", function () {
+      settings = {
+        color: DEFAULT_SETTINGS.color,
+        fruit: DEFAULT_SETTINGS.fruit,
+        theme: DEFAULT_SETTINGS.theme,
+        customHex: DEFAULT_SETTINGS.customHex,
+      };
+      applySettingsUI();
+      saveSettings();
+    });
+  }
 
   var state = "idle"; // idle | playing | over
   var paused = false;
   var snake, dir, nextDir, food, score, acc, interval, particles, lastTime;
+
+  function togglePause() {
+    if (state !== "playing") return;
+    paused = !paused;
+    if (pauseBtn) pauseBtn.classList.toggle("active", paused);
+  }
+  if (pauseBtn) pauseBtn.addEventListener("click", togglePause);
 
   function cellCenter(p) {
     return { x: p.x * cell + cell / 2, y: p.y * cell + cell / 2 };
@@ -238,6 +362,102 @@
     ctx.globalAlpha = 1;
   }
 
+  function glowBlob(ctx2, x, y, r, color) {
+    var g = ctx2.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0, color);
+    g.addColorStop(1, "rgba(0,0,0,0)");
+    ctx2.fillStyle = g;
+    ctx2.beginPath();
+    ctx2.arc(x, y, r, 0, Math.PI * 2);
+    ctx2.fill();
+  }
+
+  function drawLollipop(ctx2, size, lp) {
+    var lx = lp.fx * size, ly = lp.fy * size, lr = lp.fr * size;
+    ctx2.save();
+    ctx2.globalAlpha = 0.35;
+    ctx2.strokeStyle = "#f472b6";
+    ctx2.lineWidth = Math.max(1, size * 0.006);
+    ctx2.beginPath();
+    ctx2.moveTo(lx, ly + lr * 0.6);
+    ctx2.lineTo(lx, ly + lr * 2.2);
+    ctx2.stroke();
+    for (var i = 0; i < 3; i++) {
+      ctx2.strokeStyle = i % 2 === 0 ? "#f9a8d4" : "#ffffff";
+      ctx2.lineWidth = Math.max(1, size * 0.01);
+      ctx2.beginPath();
+      ctx2.arc(lx, ly, lr - i * lr * 0.28, 0.4 + i, Math.PI * 1.6 + i);
+      ctx2.stroke();
+    }
+    ctx2.restore();
+  }
+
+  // Draws the theme's backdrop — gradient wash + subtle theme-specific
+  // decorations — behind the grid/snake/food. Purely visual, non-interactive,
+  // and low-opacity so gameplay always stays clearly readable on top.
+  function drawThemeBackdrop(ctx2, size) {
+    var cfg = THEMES[settings.theme] || THEMES.lava;
+    var now = Date.now();
+
+    var g = ctx2.createLinearGradient(0, 0, size, size);
+    g.addColorStop(0, cfg.grad[0]);
+    g.addColorStop(1, cfg.grad[1]);
+    ctx2.fillStyle = g;
+    ctx2.fillRect(0, 0, size, size);
+
+    (cfg.blobs || []).forEach(function (b) {
+      glowBlob(ctx2, b.fx * size, b.fy * size, b.fr * size, b.color);
+    });
+
+    if (cfg.cracks) {
+      ctx2.strokeStyle = "rgba(251,146,60,0.35)";
+      ctx2.lineWidth = Math.max(1, size * 0.003);
+      cfg.cracks.forEach(function (c) {
+        ctx2.beginPath();
+        ctx2.moveTo(c.x1 * size, c.y1 * size);
+        ctx2.lineTo(c.x2 * size, c.y2 * size);
+        ctx2.stroke();
+      });
+    }
+
+    if (cfg.mountains) {
+      cfg.mountains.forEach(function (m) {
+        ctx2.beginPath();
+        m.points.forEach(function (p, i) {
+          var x = p[0] * size, y = p[1] * size;
+          if (i === 0) ctx2.moveTo(x, y); else ctx2.lineTo(x, y);
+        });
+        ctx2.closePath();
+        ctx2.fillStyle = m.color;
+        ctx2.fill();
+      });
+    }
+
+    if (cfg.stars) {
+      cfg.stars.forEach(function (s) {
+        var tw = 0.5 + Math.sin(now / 500 + s.phase) * 0.5;
+        ctx2.fillStyle = "rgba(255,255,255," + (0.3 + tw * 0.6) + ")";
+        ctx2.beginPath();
+        ctx2.arc(s.fx * size, s.fy * size, s.fr * size, 0, Math.PI * 2);
+        ctx2.fill();
+      });
+    }
+
+    if (cfg.sparkles) {
+      cfg.sparkles.forEach(function (s) {
+        var tw = 0.4 + Math.sin(now / 450 + s.phase) * 0.4;
+        ctx2.fillStyle = "rgba(224,242,254," + (0.25 + tw * 0.5) + ")";
+        ctx2.beginPath();
+        ctx2.arc(s.fx * size, s.fy * size, s.fr * size, 0, Math.PI * 2);
+        ctx2.fill();
+      });
+    }
+
+    if (cfg.lollipop) drawLollipop(ctx2, size, cfg.lollipop);
+
+    return cfg;
+  }
+
   function roundedRect(x, y, w, h, r) {
     ctx.beginPath();
     ctx.moveTo(x + r, y);
@@ -297,8 +517,10 @@
     var size = canvas.width;
     ctx.clearRect(0, 0, size, size);
 
+    var themeCfg = drawThemeBackdrop(ctx, size);
+
     // subtle grid
-    ctx.strokeStyle = "rgba(255,255,255,0.03)";
+    ctx.strokeStyle = themeCfg.grid;
     ctx.lineWidth = 1;
     for (var g = 1; g < COLS; g++) {
       ctx.beginPath();
@@ -423,6 +645,7 @@
     resize();
     reset();
     paused = false;
+    if (pauseBtn) pauseBtn.classList.remove("active");
     state = "playing";
     startOverlay.classList.add("hidden");
     overOverlay.classList.add("hidden");
@@ -438,7 +661,7 @@
       return;
     }
     if (state === "playing" && (key === "p" || key === "P" || key === "Escape")) {
-      paused = !paused;
+      togglePause();
       return;
     }
     if (state === "playing" && paused) return;

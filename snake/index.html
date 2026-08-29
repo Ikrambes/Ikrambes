@@ -23,6 +23,7 @@
         <span class="label">Best</span>
         <span class="value" id="best">0000</span>
       </div>
+      <button class="pause-btn" id="pause-btn" aria-label="Pause">⏸</button>
     </div>
 
     <div class="stage">
@@ -57,6 +58,27 @@
               <button class="fruit-btn" data-fruit="grapes" aria-label="Grapes">🍇</button>
             </div>
           </div>
+          <div class="custom-group">
+            <span class="custom-label">Theme</span>
+            <div class="theme-options" id="theme-options">
+              <button class="theme-btn selected" data-theme="lava" style="--tp:linear-gradient(90deg,#7f1d1d,#ea580c,#fb923c)">
+                <span class="theme-icon">🌋</span><span class="theme-name">Lava</span><span class="theme-preview"></span>
+              </button>
+              <button class="theme-btn" data-theme="ice" style="--tp:linear-gradient(90deg,#0369a1,#7dd3fc,#ffffff)">
+                <span class="theme-icon">🏔️</span><span class="theme-name">Ice</span><span class="theme-preview"></span>
+              </button>
+              <button class="theme-btn" data-theme="earth" style="--tp:linear-gradient(90deg,#14532d,#22c55e,#a16207)">
+                <span class="theme-icon">🌍</span><span class="theme-name">Earth</span><span class="theme-preview"></span>
+              </button>
+              <button class="theme-btn" data-theme="space" style="--tp:linear-gradient(90deg,#1e1b4b,#6366f1,#a855f7)">
+                <span class="theme-icon">🌌</span><span class="theme-name">Space</span><span class="theme-preview"></span>
+              </button>
+              <button class="theme-btn" data-theme="candy" style="--tp:linear-gradient(90deg,#831843,#f472b6,#ffffff)">
+                <span class="theme-icon">🍬</span><span class="theme-name">Candy</span><span class="theme-preview"></span>
+              </button>
+            </div>
+          </div>
+          <button class="reset-btn" id="reset-defaults">Reset to Defaults</button>
         </div>
 
         <button class="play" id="start-btn">Start Game</button>
@@ -77,6 +99,21 @@
       <button class="left" data-dir="left" aria-label="left">◀</button>
       <button class="down" data-dir="down" aria-label="down">▼</button>
       <button class="right" data-dir="right" aria-label="right">▶</button>
+    </div>
+
+    <div class="howto">
+      <h2>🎮 How to Play</h2>
+      <div class="row">
+        <b>Move</b>
+        <span class="keys">
+          <span class="key">↑</span><span class="key">↓</span><span class="key">←</span><span class="key">→</span>
+          <span class="key-or">or</span>
+          <span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span>
+        </span>
+      </div>
+      <div class="row"><b>Eat</b><span>Eat the fruit to grow longer and increase your score.</span></div>
+      <div class="row"><b>Avoid</b><span>Don't hit the walls or yourself.</span></div>
+      <div class="row"><b>Pause</b><span class="keys"><span class="key">P</span></span><span>or use the ⏸ button.</span></div>
     </div>
   </div>
 
