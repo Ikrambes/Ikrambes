@@ -1,52 +1,246 @@
-<div align="center" style="background: linear-gradient(135deg,#0b3d91,#1e5799); padding: 50px; border-radius: 15px;">
+<div align="center">
 
-  <h1 style="color: white; margin-bottom: 0;">Hi there, I'm Ikram Besbassi 👋</h1>
-  <h3 style="color: white; margin-top: 5px;">Final-Year Software Engineering Student | AI & Intelligent Applications</h3>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00131A&height=180&section=header&animation=fadeIn" width="100%"/>
 
-  <p>
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&color=ffffff&center=true&vCenter=true&width=600&lines=Building+intelligent+web-apps...;Creating+scalable+systems...;Exploring+AI+integration..." alt="Typing SVG"/>
-  </p>
+<h1>IKRAM BESBASSI</h1>
+<h3>Software Engineer</h3>
 
-  <p align="center">
-  <a href="https://www.linkedin.com/in/ikram-besbassi/">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:besbassi.ikram@gmail.com">
-    <img src="https://img.shields.io/badge/Email-%23D44638.svg?logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-</p>
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=00F5FF&center=true&vCenter=true&width=600&lines=Backend+%26+APIs;Full-Stack+Applications;AI-Powered+Software;Data+%26+Automation;Cloud+%26+DevOps" alt="rotating focus areas" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/Status-Open%20to%20Software%20Engineering%20Roles-00F5FF?style=for-the-badge&labelColor=0D1117" alt="open to work"/>
+
+<br/><br/>
+
+<a href="https://github.com/ikrambes">
+  <img src="https://img.shields.io/badge/GitHub-ikrambes-0D1117?style=for-the-badge&logo=github&logoColor=00F5FF" />
+</a>
+<a href="https://www.linkedin.com/in/ikram-besbassi/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0D1117?style=for-the-badge&logo=linkedin&logoColor=00F5FF" />
+</a>
+<a href="mailto:besbassi.ikram@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact-0D1117?style=for-the-badge&logo=gmail&logoColor=00F5FF" />
+</a>
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:00F5FF,100:0D1117&height=3&section=header" width="100%"/>
 
-### About Me
-I am a final-year Software Engineering student passionate about building **intelligent web applications**.  
-I focus on designing **scalable, user-focused, and data-driven systems**, combining performance, usability, and practical innovation.  
+<br/>
 
----
+## `01` About
 
-### Skills
+I'm a Software Engineer who builds complete systems — the interface, the API underneath it, the database it talks to, and the background processes that keep it running. Recent work spans a full-stack platform for monitoring an ATM network (Next.js, FastAPI, PostgreSQL, async task processing with Celery and Redis), an NLP-based tool that automated SEO keyword auditing using TF-IDF and spaCy, and a travel itinerary application.
 
-**Programming & Development:**  
-Python, Java, JavaScript, TypeScript, SQL, PHP, Kotlin, Swift, Dart (Flutter)  
-HTML, CSS  
+I move comfortably between typed and dynamic languages, relational and NoSQL storage, request/response APIs and event-driven background work. I'm currently looking for **Software Engineering roles** — backend, full-stack, or Python/Java-focused — where that range across the stack is useful.
 
-**Databases:**  
-MySQL, MongoDB, Firebase, NoSQL  
+<div align="center">
 
-**Frameworks:**  
-Flask, React, Angular, Node.js, Express, Flutter  
+`Backend & APIs` · `Full-Stack Systems` · `Data & Automation` · `AI Integration` · `Containers & CI/CD`
 
-**AI & Machine Learning:**  
-Data Analysis & Processing (Pandas, NumPy, PySpark), AI Model Training & Optimization, Web Scraping & Automation (Selenium, BeautifulSoup)
+</div>
 
----
+<br/>
 
+## `02` Tech Stack
 
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white) ![Scala](https://img.shields.io/badge/scala-%23DC322F.svg?style=for-the-badge&logo=scala&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka) ![Apache Spark](https://img.shields.io/badge/Apache%20Spark-FDEE21?style=for-the-badge&logo=apachespark&logoColor=black) ![Apache Hadoop](https://img.shields.io/badge/Apache%20Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+<div align="center">
 
-[![](https://visitcount.itsvg.in/api?id=Ikrambes&icon=0&color=0)](https://visitcount.itsvg.in)
+**Languages**
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<img src="https://skillicons.dev/icons?i=python,java,js,ts,dart,bash" />
+
+**Application Development**
+
+<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,express,react,nextjs,angular,tailwind,flutter" />
+
+**Data & AI**
+
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" />
+<img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" />
+<img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" />
+<img src="https://img.shields.io/badge/spaCy-09A3D5?style=flat-square&logo=spacy&logoColor=white" />
+<img src="https://img.shields.io/badge/NLP%20%2F%20TF--IDF-0D1117?style=flat-square&color=333" />
+
+**Databases**
+
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase" />
+<img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" />
+
+**Cloud / DevOps / Tools**
+
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,git,github,githubactions,linux" />
+<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" />
+
+</div>
+
+<br/>
+
+## `03` Capabilities
+
+<table width="100%">
+<tr>
+<td width="8%" align="center">⚙️</td>
+<td width="22%"><b>Application Engineering</b></td>
+<td>Backend services, REST APIs, web applications, business logic, and third-party integrations.</td>
+</tr>
+<tr>
+<td align="center">🧠</td>
+<td><b>AI & Intelligent Applications</b></td>
+<td>Integrating AI/NLP/ML capabilities into software products and workflows where they add real value.</td>
+</tr>
+<tr>
+<td align="center">📊</td>
+<td><b>Data & Processing</b></td>
+<td>Data processing pipelines, distributed processing, and streaming / event-driven systems.</td>
+</tr>
+<tr>
+<td align="center">🗄️</td>
+<td><b>Data Systems</b></td>
+<td>Relational databases, NoSQL, caching layers, and object storage.</td>
+</tr>
+<tr>
+<td align="center">🔄</td>
+<td><b>Automation & Infrastructure</b></td>
+<td>Containers, background job queues, CI/CD, and deployment workflows.</td>
+</tr>
+</table>
+
+<br/>
+
+## `04` Console
+
+```bash
+ikram@dev:~$ whoami
+> Ikram Besbassi — Software Engineer
+
+ikram@dev:~$ cat core_stack.txt
+> Python · Java · TypeScript · FastAPI · React · PostgreSQL · Docker
+
+ikram@dev:~$ ps --system
+> backend_services       [running]
+> apis                   [running]
+> data_pipelines         [running]
+> ai_integration         [running]
+> automation             [running]
+
+ikram@dev:~$ git log --oneline -3
+> feat: ship full-stack platform for ATM network monitoring
+> feat: automate SEO keyword auditing with TF-IDF + spaCy
+> feat: build itinerary management app
+
+ikram@dev:~$ git status
+On branch main
+> Looking for: Software Engineering opportunities
+> Status: open to work
+```
+
+<br/>
+
+## `05` Featured Projects
+
+<table width="100%">
+<tr>
+<td width="100%">
+
+### GAP Gestion
+Full-stack platform for monitoring, managing, and analyzing an ATM/GAB network.
+
+**Engineering focus:** full-stack architecture · REST APIs · asynchronous processing · background jobs · caching · relational databases · map-based data visualization · containerization
+
+<img src="https://img.shields.io/badge/Next.js%2014-000000?style=flat-square&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
+<img src="https://img.shields.io/badge/React--Leaflet-199900?style=flat-square&logo=leaflet&logoColor=white" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/SQLAlchemy%202.0-D71F00?style=flat-square" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/Celery%20%2B%20Beat-37814A?style=flat-square&logo=celery&logoColor=white" />
+<img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=flat-square&logo=docker&logoColor=white" />
+
+<a href="https://github.com/ikrambes/REPOSITORY_NAME_GAP_GESTION">
+  <img src="https://img.shields.io/badge/View%20Repository-0D1117?style=flat-square&logo=github&logoColor=00F5FF" />
+</a>
+
+</td>
+</tr>
+<tr>
+<td width="100%">
+
+### SEO Keyword Auditor
+Python/Flask application for automated SEO keyword analysis that significantly reduced the time required to run a manual audit.
+
+**Engineering focus:** text processing pipeline · keyword relevance scoring · NLP-driven automation
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
+<img src="https://img.shields.io/badge/TF--IDF-333333?style=flat-square" />
+<img src="https://img.shields.io/badge/spaCy-09A3D5?style=flat-square&logo=spacy&logoColor=white" />
+<img src="https://img.shields.io/badge/NLP-0D1117?style=flat-square" />
+
+<a href="https://github.com/ikrambes/REPOSITORY_NAME_SEO_AUDITOR">
+  <img src="https://img.shields.io/badge/View%20Repository-0D1117?style=flat-square&logo=github&logoColor=00F5FF" />
+</a>
+
+</td>
+</tr>
+<tr>
+<td width="100%">
+
+### Tarzaim
+Travel application focused on itinerary and travel management, built as a product from the ground up.
+
+**Engineering focus:** application development · product feature design
+
+<a href="https://github.com/ikrambes/REPOSITORY_NAME_TARZAIM">
+  <img src="https://img.shields.io/badge/View%20Repository-0D1117?style=flat-square&logo=github&logoColor=00F5FF" />
+</a>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## `06` GitHub Activity
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=ikrambes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=00F5FF&text_color=c9d1d9" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ikrambes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=c9d1d9" width="35%" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ikrambes&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5FF&fire=00F5FF&currStreakLabel=00F5FF" width="70%" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ikrambes&theme=tokyo-night&bg_color=0D1117&color=00F5FF&line=00F5FF&point=ffffff&hide_border=true" width="90%" />
+
+</div>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:00F5FF,100:0D1117&height=3&section=header" width="100%"/>
+
+<div align="center">
+
+<br/>
+
+### Let's build something.
+
+<a href="https://github.com/ikrambes">
+  <img src="https://img.shields.io/badge/GitHub-ikrambes-0D1117?style=for-the-badge&logo=github&logoColor=00F5FF" />
+</a>
+<a href="https://www.linkedin.com/in/ikram-besbassi/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0D1117?style=for-the-badge&logo=linkedin&logoColor=00F5FF" />
+</a>
+<a href="mailto:besbassi.ikram@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact-0D1117?style=for-the-badge&logo=gmail&logoColor=00F5FF" />
+</a>
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00131A&height=150&section=footer&animation=fadeIn&reversed=true" width="100%"/>
+
+</div>
