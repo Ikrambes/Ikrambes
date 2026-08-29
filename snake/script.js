@@ -56,6 +56,7 @@
   bestEl.textContent = pad(best);
 
   var state = "idle"; // idle | playing | over
+  var paused = false;
   var snake, dir, nextDir, food, score, acc, interval, particles, lastTime;
 
   function cellCenter(p) {
@@ -265,6 +266,19 @@
     }
 
     drawParticles();
+
+    if (state === "playing" && paused) {
+      ctx.fillStyle = "rgba(11,10,9,0.55)";
+      ctx.fillRect(0, 0, size, size);
+      ctx.fillStyle = "#f2ece4";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.font = (18 * dpr) + "px monospace";
+      ctx.fillText("PAUSED", size / 2, size / 2 - 10 * dpr);
+      ctx.font = (11 * dpr) + "px monospace";
+      ctx.fillStyle = "#a8998a";
+      ctx.fillText("press P to resume", size / 2, size / 2 + 16 * dpr);
+    }
   }
 
   function shade(c1, c2, t) {
@@ -284,7 +298,7 @@
     var dt = time - lastTime;
     lastTime = time;
 
-    if (state === "playing") {
+    if (state === "playing" && !paused) {
       acc += dt;
       while (acc >= interval) {
         acc -= interval;
@@ -300,6 +314,7 @@
   function startGame() {
     resize();
     reset();
+    paused = false;
     state = "playing";
     startOverlay.classList.add("hidden");
     overOverlay.classList.add("hidden");
@@ -314,6 +329,11 @@
       startGame();
       return;
     }
+    if (state === "playing" && (key === "p" || key === "P" || key === "Escape")) {
+      paused = !paused;
+      return;
+    }
+    if (state === "playing" && paused) return;
     var map = {
       ArrowUp: [0, -1], w: [0, -1], W: [0, -1],
       ArrowDown: [0, 1], s: [0, 1], S: [0, 1],

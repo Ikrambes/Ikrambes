@@ -1,0 +1,68 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="898" height="218" rx="18" />
+    </clipPath>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9a3412"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <radialGradient id="foodGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="218" rx="18" fill="#0b0a09" stroke="#332619" stroke-width="2"/>
+  <rect x="1" y="1" width="898" height="218" rx="18" fill="url(#bgGlow)"/>
+
+  <g clip-path="url(#frame)" opacity="0.35">
+    <g stroke="#ffffff" stroke-opacity="0.05">
+      <line x1="0" y1="36" x2="900" y2="36"/><line x1="0" y1="72" x2="900" y2="72"/>
+      <line x1="0" y1="108" x2="900" y2="108"/><line x1="0" y1="144" x2="900" y2="144"/>
+      <line x1="0" y1="180" x2="900" y2="180"/>
+      <line x1="90" y1="0" x2="90" y2="220"/><line x1="180" y1="0" x2="180" y2="220"/>
+      <line x1="270" y1="0" x2="270" y2="220"/><line x1="360" y1="0" x2="360" y2="220"/>
+      <line x1="450" y1="0" x2="450" y2="220"/><line x1="540" y1="0" x2="540" y2="220"/>
+      <line x1="630" y1="0" x2="630" y2="220"/><line x1="720" y1="0" x2="720" y2="220"/>
+      <line x1="810" y1="0" x2="810" y2="220"/>
+    </g>
+  </g>
+
+  <!-- snake body, tail to head -->
+  <g>
+    <rect x="70"  y="93"  width="34" height="34" rx="11" fill="#7c2d12"/>
+    <rect x="126" y="120" width="34" height="34" rx="11" fill="#8a3212"/>
+    <rect x="182" y="140" width="34" height="34" rx="11" fill="#983911"/>
+    <rect x="238" y="132" width="34" height="34" rx="11" fill="#a63f10"/>
+    <rect x="294" y="100" width="34" height="34" rx="11" fill="#b9440e"/>
+    <rect x="350" y="76"  width="34" height="34" rx="11" fill="#c94a0d"/>
+    <rect x="406" y="88"  width="34" height="34" rx="11" fill="#d9500d"/>
+    <rect x="462" y="118" width="34" height="34" rx="11" fill="#e3560c"/>
+    <rect x="518" y="126" width="34" height="34" rx="11" fill="#ea580c"/>
+
+    <!-- head -->
+    <g>
+      <rect x="574" y="103" width="40" height="40" rx="13" fill="#fb923c">
+        <animate attributeName="opacity" values="1;0.88;1" dur="1.6s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="600" cy="115" r="3" fill="#100b07"/>
+      <circle cx="600" cy="131" r="3" fill="#100b07"/>
+    </g>
+  </g>
+
+  <!-- glowing food -->
+  <g>
+    <circle cx="760" cy="110" r="32" fill="url(#foodGlow)">
+      <animate attributeName="r" values="30;36;30" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="110" r="12" fill="#fb923c">
+      <animate attributeName="r" values="11;13.5;11" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="755" cy="105" r="3.4" fill="#fed7aa"/>
+  </g>
+</svg>
